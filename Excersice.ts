@@ -9,7 +9,7 @@ sin importar si es por título, autor o ISBN, complicando su implementación.
 
 Se ha identificado que la clase es muy difícil de mantener y modificar. Tu tarea es estudiar el código, identificar los problemas y
  considerar cómo podría refactorizarse para mejorar su diseño y estructura.*/
- class LibraryManagerEx {
+class LibraryManagerEx {
     books: any[] = [];
     loans: any[] = [];
 
@@ -26,9 +26,9 @@ Se ha identificado que la clase es muy difícil de mantener y modificar. Tu tare
 
     search(query: string) {
         // Usa el mismo método para buscar por título, autor o ISBN
-        return this.books.filter(book => 
-            book.title.includes(query) || 
-            book.author.includes(query) || 
+        return this.books.filter(book =>
+            book.title.includes(query) ||
+            book.author.includes(query) ||
             book.ISBN === query
         );
     }
